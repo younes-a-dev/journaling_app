@@ -58,7 +58,9 @@ class NoteItem extends StatelessWidget {
             children: [
               const SizedBox(),
               Text(
-                DateFormat.yMMMMd('en_US').add_jm().format(note.dateTime!),
+                DateFormat('MMM d, y HH:mm')
+                                  .format(note.dateTime!),
+                // DateFormat.yMMMMd('en_US').add_jm().format(note.dateTime!),
                 style: const TextStyle(color: Color(0xff616161), fontSize: 13),
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,

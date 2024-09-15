@@ -8,10 +8,10 @@ import 'package:trading_journal/features/journal/presentation/screens/full_scree
 import 'package:trading_journal/features/journal/presentation/screens/journal_add_up_screen.dart';
 
 class JournalDetailScreen extends StatefulWidget {
-   JournalDetailScreen({this.journal, super.key});
+  JournalDetailScreen({this.journal, super.key});
 
   static const routeName = '/ journal Detail Screen';
-   Journal? journal;
+  Journal? journal;
 
   @override
   State<JournalDetailScreen> createState() => _JournalDetailScreenState();
@@ -129,7 +129,7 @@ class _JournalDetailScreenState extends State<JournalDetailScreen> {
                             const Spacer(),
                             Text(
                               // DateFormat.yMMMMEEEEd('en_US').format(widget.journal!.dateTime!),
-                              DateFormat('EEEE MMMM d, y HH:mm')
+                              DateFormat('EEEE MMM d, y HH:mm')
                                   .format(widget.journal!.selectedDateTime!),
                               style: const TextStyle(
                                   color: Color(0xff616161), fontSize: 16),
